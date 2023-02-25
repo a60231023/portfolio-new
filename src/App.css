@@ -151,11 +151,13 @@ span.navbar-text {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .navbar-text button {
+  width: 120px;
+  height: 50px;
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
-  padding: 18px 34px;
-  font-size: 18px;
+  padding: 6px 8px;
+  font-size: 15px;
   margin-left: 18px;
 	position: relative;
 	background-color: transparent;
@@ -272,6 +274,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  position: relative;
+  top: -110px;
 }
 .banner button svg {
   font-size: 25px;
@@ -283,7 +287,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
+  position: relative;
+  top: -100px;
   animation: updown 3s linear infinite;
+
 }
 @keyframes updown {
     0% {
@@ -296,10 +303,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         transform: translateY(-20px);
     }
 }
-.txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
+.desc{
+  position: relative;
+  top: -80px;
+  display: flex;
 }
-
+#test{
+  text-align: justify;
+}
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
@@ -348,16 +359,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: black;
   background-image: url('./assets/img/banner-bg\ \(1\).jpg');
+  height: 100vh;
   
 }
-.project h2 {
-	font-size: 45px;
+.contn-pos{
+  position: relative;
+  top: -60px;
+}
+.project h4 {
+	font-size: 25px;
 	font-weight: 700;
   text-align: center;
 }
 .project p {
   color: #B8B8B8;
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
@@ -365,7 +381,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 62%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
@@ -393,7 +409,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
     top: 0;
     left: 0;
     z-index: -1;
@@ -416,6 +432,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
+}
+#pills-tab{
+  cursor: pointer;
+}
+#pills-tab .nav-link:hover {
+  background-color: white;
+  color: black;
 }
 .proj-imgbx {
   position: relative;
@@ -475,6 +498,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   background-image: url('./assets/img/banner-bg\ \(1\).jpg');
   padding: 60px 0 200px 0;
+  height: 95vh;
+}
+.cont-con{
+  position: relative;
+  top: -50px;
 }
 .contact img {
   width: 92%;
@@ -511,12 +539,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0.8;
 }
 .contact form button {
+  width: 100px;
   font-weight: 700;
   color: #000;
   background-color: #fff;
-  padding: 14px 48px;
+  padding: 6px 8px;
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 15px;
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
@@ -545,25 +574,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
+  margin-top: -10px;
   padding: 0 0 50px 0;
   background-image: url('./assets/img/banner-bg\ \(1\).jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .newsletter-bx {
   background: transparent;
   border-radius: 55px;
   color: #121212;
   padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .newsletter-bx h3 {
   font-weight: 700;
   color :#ffffff;
-  letter-spacing: 0.5px;
   line-height: 1.2em;
+  text-align: justify;
+  font-size: 24.8px;
 }
 .new-email-bx {
   background: #fff;
@@ -574,28 +606,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
-}
-.new-email-bx::after {
-  content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
 .new-email-bx input {
   width: 100%;
   color: #121212;
@@ -605,12 +615,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background-color: #212F5B;
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.5px;
   border-radius: 18px;
+}
+.new-email-bx button:hover{
+  background-color: black;
+  color: white;
 }
 .footer img {
   width: 26%;

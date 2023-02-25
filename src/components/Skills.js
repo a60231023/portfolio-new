@@ -62,3 +62,16 @@ export const Skills = () => {
     </section>
   )
 }
+
+// var c = 100;
+
+// function x(){
+//   var c = 30;
+//   console.log(c);
+//   console.log(window.c);
+//   window.c = 20;
+//   console.log(c);
+//   console.log(window.c);
+// }
+// console.log(c);
+// x();

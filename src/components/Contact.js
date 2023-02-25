@@ -45,7 +45,7 @@ export const Contact = () => {
 
   return (
     <section className="contact" id="connect">
-      <Container>
+      <Container className="cont-con">
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
@@ -75,7 +75,7 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
+                      <button className="cont-btn" type="submit"><span>{buttonText}</span></button>
                     </Col>
                     {
                       status.message &&
