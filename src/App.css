@@ -92,7 +92,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #212F5B;
+  background-color: #0C1634;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -112,6 +112,18 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
     display: flex;
     align-items: center;
+}
+.newlogo{
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  right: 115px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.newlogo:hover{
+  transform: scale(1.2);
 }
 .social-icon {
     display: inline-block;
